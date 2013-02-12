@@ -1,0 +1,13 @@
+{
+  "name": "ember-template",
+  "title": "An HTML/JS/CSS app",
+  "version": "0.0.1",
+  "private": true,
+  "author": {
+    "name": "John Doe",
+    "company": "ACME, Inc."
+  },
+  "dependencies": {
+    "lineman": "~0.4.0"
+  }
+}
