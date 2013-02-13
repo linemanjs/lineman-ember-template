@@ -7,11 +7,9 @@ App.Hello = DS.Model.extend
 
 App.HelloController = Ember.ObjectController.extend()
 
-App.HelloRoute = Ember.Route.extend
-  setupController: (controller) ->
-    model = App.Hello.find(1)
-    controller.set('content', model)
+App.IndexRoute = Ember.Route.extend
+  redirect: ->
+    this.transitionTo('hellos/1')
 
 App.Router.map ->
-  @route("hello", path: '/')
-
+  @resource('hello', { path: '/hellos/:hello_id' });
