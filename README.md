@@ -6,6 +6,7 @@ To get started, clone this repo, and then:
 
 ```
 $ npm install
+$ npm install -g lineman
 $ lineman run
 ```
 
