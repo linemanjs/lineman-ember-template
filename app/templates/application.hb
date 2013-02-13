@@ -1,7 +1,3 @@
-<header>
-  <h1>Say Hello to Ember!</h1>
-</header>
-
-<div>
+<div class="hello">
   {{outlet}}
 </div>
