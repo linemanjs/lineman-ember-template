@@ -11,7 +11,6 @@ window.App = Ember.Application.create()
 
 App.HelloRoute = Ember.Route.extend
   setupController: (controller) ->
-    debugger
     controller.set('greeting', "Hello, World!")
 
 App.Router.map ->
