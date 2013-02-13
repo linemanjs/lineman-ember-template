@@ -15,9 +15,6 @@
 
 module.exports =
   drawRoutes: (app) ->
-    # app.get('/api/greeting/:message', function(req, res){
-    #   res.json({ message: "OK, "+req.params.message });
-
     app.get '/hellos/1', (req, res) ->
       res.json
         hello:
