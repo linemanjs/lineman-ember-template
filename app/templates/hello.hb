@@ -1,1 +1,1 @@
-<strong>{{greeting}}</strong>
+<strong>{{greeting}}, {{audience}}!</strong>
