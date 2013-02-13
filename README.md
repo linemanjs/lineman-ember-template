@@ -1,6 +1,6 @@
 # Lineman + Ember
 
-A little example that pulls lineman & ember together.
+A little example that pulls [lineman](https://github.com/testdouble/lineman) & [ember](https://emberjs.com) together.
 
 To get started, clone this repo, and then:
 
