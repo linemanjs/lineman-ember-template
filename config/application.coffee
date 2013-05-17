@@ -7,7 +7,7 @@ You can find the parent object in: node_modules/lineman/config/application.js
 ###
 
 _ = require("underscore")
-config = require('lineman').config
+config = require(process.env['LINEMAN_MAIN']).config
 
 
 replaceVanillaHandlebarsTasks = ->

@@ -2,12 +2,15 @@
 
 A little example that pulls [lineman](https://github.com/testdouble/lineman) & [ember](http://emberjs.com) together.
 
-To get started, clone this repo, and then:
+If you haven't already done so, first: install [node.js](http://nodejs.org); next, install lineman:
+
+$ npm install -g lineman
+
+To work from this example, just clone into it and run:
 
 ```
 $ npm install
-$ npm install -g lineman
 $ lineman run
 ```
 
-And then visit the page at [localhost:8000](http://localhost:8000)
+And then visit the page at [localhost:8000](http://localhost:8000) to verify that it works.
