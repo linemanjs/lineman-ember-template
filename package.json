@@ -8,7 +8,7 @@
     "company": "ACME, Inc."
   },
   "dependencies": {
-    "grunt-ember-handlebars": "0.3.0",
+    "grunt-ember-handlebars": "0.4.0",
     "underscore": "1.4.4"
   }
 }
