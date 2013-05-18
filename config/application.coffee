@@ -9,11 +9,7 @@ You can find the parent object in: node_modules/lineman/config/application.js
 _ = require("underscore")
 config = require(process.env['LINEMAN_MAIN']).config
 
-
-replaceVanillaHandlebarsTasks = ->
-  _([config.application.appTasks.common, config.application.watch.handlebars.tasks]).each (taskList) ->
-    taskList[_(taskList).indexOf("handlebars")] = "ember_handlebars"
-replaceVanillaHandlebarsTasks()
+config.application.appTasks.common = _(config.application.appTasks.common).reject (n) -> n == "handlebars"
 
 module.exports = config.extend 'application',
   # Override application configuration here. Common examples follow in the comments.
@@ -32,6 +28,11 @@ module.exports = config.extend 'application',
   #      port: 3000
   #    }
   #  }
+
+  appTasks:
+    common: ["ember_handlebars"]
+
+  loadNpmTasks: ['grunt-ember-handlebars']
 
   ember_handlebars:
     options:
