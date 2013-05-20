@@ -40,3 +40,7 @@ module.exports = config.extend 'application',
     compile:
       files:
         "generated/template/handlebars.js": "<%= files.template.handlebars %>"
+
+  watch:
+    handlebars:
+      tasks: ["ember_handlebars:compile"]
