@@ -29,7 +29,7 @@ module.exports = config.extend 'application',
   #    }
   #  }
 
-  appendTasks:
+  prependTasks:
     common: ["ember_handlebars"]
 
   loadNpmTasks: ['grunt-ember-handlebars']
