@@ -6,12 +6,7 @@ Exports an object that defines
 You can find the parent object in: node_modules/lineman/config/application.js
 ###
 
-_ = require("underscore")
-config = require(process.env['LINEMAN_MAIN']).config
-
-config.application.appTasks.common = _(config.application.appTasks.common).reject (n) -> n == "handlebars"
-
-module.exports = config.extend 'application',
+module.exports = require(process.env['LINEMAN_MAIN']).config.extend 'application',
   # Override application configuration here. Common examples follow in the comments.
 
   #  API Proxying
@@ -31,6 +26,8 @@ module.exports = config.extend 'application',
 
   prependTasks:
     common: ["ember_handlebars"]
+  removeTasks:
+    common: "handlebars"
 
   loadNpmTasks: ['grunt-ember-handlebars']
 

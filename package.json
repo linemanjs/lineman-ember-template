@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "grunt-ember-handlebars": "0.6.0",
-    "underscore": "1.4.4",
-    "lineman": ">= 0.7.1"
+    "lineman": ">= 0.8.2"
   }
 }
