@@ -26,6 +26,7 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend 'application
 
   prependTasks:
     common: ["ember_handlebars"]
+
   removeTasks:
     common: "handlebars"
 
