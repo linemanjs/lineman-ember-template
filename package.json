@@ -8,7 +8,7 @@
     "company": "ACME, Inc."
   },
   "dependencies": {
-    "grunt-ember-handlebars": "0.6.0",
-    "lineman": ">= 0.11.1"
+    "grunt-ember-handlebars": "0.7.0",
+    "lineman": ">= 0.12.3"
   }
 }

@@ -12,11 +12,11 @@
     defining a spec based on the needs of the client code that emerge.
  ###
 
-
 module.exports =
   drawRoutes: (app) ->
-    app.get '/hellos/1', (req, res) ->
+    app.get '/hellos/:hello_id', (req, res) ->
       res.json
         hello:
+          id: req.params.hello_id
           greeting: "Hello"
           audience: "World"
