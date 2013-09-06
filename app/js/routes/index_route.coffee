@@ -1,3 +1,3 @@
 App.IndexRoute = Ember.Route.extend
   redirect: ->
-    @transitionTo('hello', App.Hello.find(1))
+    @transitionTo('hello', @get('store').find('hello', 1))

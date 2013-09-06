@@ -1,3 +1,3 @@
 App.Hello = DS.Model.extend
-  greeting: DS.attr('string')
-  audience: DS.attr('string')
+  greeting: DS.attr()
+  audience: DS.attr()
