@@ -1,6 +1,6 @@
 # Lineman + Ember
 
-A little example that pulls [lineman](https://github.com/testdouble/lineman) & [ember](http://emberjs.com) together.
+A little example that pulls [lineman](https://github.com/linemanjs/lineman) & [ember](http://emberjs.com) together.
 
 If you haven't already done so, first: install [node.js](http://nodejs.org); next, install lineman:
 
