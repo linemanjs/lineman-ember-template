@@ -9,8 +9,6 @@
   },
   "devDependencies": {
     "lineman": ">= 0.24.4",
-    "handlebars": "~1.3.0",
-    "ember-template-compiler": "1.1.2",
-    "grunt-ember-templates": "~0.4.18"
+    "lineman-ember": ">= 0.0.1"
   }
 }
