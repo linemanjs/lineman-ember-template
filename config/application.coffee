@@ -25,20 +25,22 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend 'application
   #  }
 
   prependTasks:
-    common: ["ember_handlebars"]
+    common: ["emberTemplates"]
 
   removeTasks:
     common: "handlebars"
 
-  loadNpmTasks: ['grunt-ember-handlebars']
+  loadNpmTasks: ['grunt-ember-templates']
 
-  ember_handlebars:
+  emberTemplates:
     options:
-      processName: (name) -> name.match(/app\/templates\/([^.]*)/)[1]
+      templateBasePath: "app/templates/"
+      templateFileExtensions: /\.(hb|hbs|handlebar|handlebars)/
+      # processName: (name) -> name.match(/app\/templates\/([^.]*)/)[1]
     compile:
       files:
         "generated/template/handlebars.js": "<%= files.template.handlebars %>"
 
   watch:
     handlebars:
-      tasks: ["ember_handlebars:compile", "concat_sourcemap:js"]
+      tasks: ["emberTemplates:compile", "concat_sourcemap:js"]

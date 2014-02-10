@@ -7,8 +7,10 @@
     "name": "John Doe",
     "company": "ACME, Inc."
   },
-  "dependencies": {
-    "grunt-ember-handlebars": "0.7.0",
-    "lineman": ">= 0.23"
+  "devDependencies": {
+    "lineman": ">= 0.24.4",
+    "handlebars": "~1.3.0",
+    "ember-template-compiler": "1.1.2",
+    "grunt-ember-templates": "~0.4.18"
   }
 }
