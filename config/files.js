@@ -1,24 +1,20 @@
-/* Exports an object that defines
- *  all of the paths & globs that the project
- *  is concerned with.
+/* Exports a function which returns an object that overrides the default &
+ *   plugin file patterns (used widely through the app configuration)
  *
- * The "configure" task will require this file and
- *  then re-initialize the grunt config such that
- *  directives like <config:files.js.app> will work
- *  regardless of the point you're at in the build
- *  lifecycle.
+ * To see the default definitions for Lineman's file paths and globs, see:
  *
- * You can find the parent object in: node_modules/lineman/config/files.js
+ *   - https://github.com/linemanjs/lineman/blob/master/config/files.coffee
  */
-
-module.exports = require(process.env['LINEMAN_MAIN']).config.extend('files', {
+module.exports = function(lineman) {
   //Override file patterns here
-  js: {
-    vendor: [
-      "vendor/js/jquery.js",
-      "vendor/js/handlebars.runtime.js",
-      "vendor/js/ember.js",
-      "vendor/js/**/*.js"
-    ]
-  }
-});
+  return {
+    js: {
+      vendor: [
+        "vendor/js/jquery.js",
+        "vendor/js/handlebars.runtime.js",
+        "vendor/js/ember.js",
+        "vendor/js/**/*.js"
+      ]
+    }
+  };
+};

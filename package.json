@@ -10,5 +10,9 @@
   "devDependencies": {
     "lineman": ">= 0.24.4",
     "lineman-ember": ">= 0.0.1"
+  },
+  "scripts": {
+    "start": "lineman run",
+    "test": "lineman spec-ci"
   }
 }
